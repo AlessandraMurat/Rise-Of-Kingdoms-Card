@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap');
+
+
+*,*::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  background: -webkit-gradient(linear left top, left bottom, from(#7a858c)color-stop(65%,#7e2208)) fixed;
+  background: linear-gradient(to bottom,#09070e 0%,#081025 65%,#a31212 100%) fixed;
+  background-image: url('/imagem/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font: 13px/20px "Frank Ruhl Libre";
+  color: #9e9e9e;
+  margin: 30px;
+}
+
+.slide-container{
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.wrapper{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper:focus{
+  outline: 0;
+}
+
+.clash-card{
+  background-color: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image{
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+
+}
+
+.clash-card__image--carlos{
+  background: url('/imagem/backcarlosm.jpg');
+
+}
+
+.clash-card__image--carlos img{
+  width: 285px;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+.clash-card__image--kusunoki{
+  background:url('/imagem/bgkusunoki\ \(2\).jpg')
+}
+
+.clash-card__image--kusunoki img{
+  width: 350px;
+  position: absolute;
+  top: -60px;
+  left: 80px;
+}
+
+.clash-card__image--richard{
+  background: url('/imagem/bgrichard.jpg');
+}
+
+.clash-card__image--richard img{
+  width: 270px;
+  position: absolute;
+  top: -40px;
+  left: -50px;
+}
+
+.clash-card__image--joana{
+  background: url('/imagem/bgjoana.jpg');
+}
+
+.clash-card__image--joana img{
+  width: 215px;
+  position: absolute;
+  top: -65px;
+  left:155px;
+}
+
+.clash-card__image--seong{
+  background: url('/imagem/bgcolor.jpg');
+}
+
+.clash-card__image--seong img{
+  width: 280px;
+  position: absolute;
+  top: -60px;
+  left: -90px;
+}
+
+.clash-card__level{
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.clash-card__level--carlos{
+  color: #70300c;
+}
+
+.clash-card__level--kusunoki{
+  color: #e40a0a;
+}
+
+.clash-card__level--richard{
+  color: #500e34;
+}
+
+.clash-card__level--joana{
+  color: #2883a0;
+}
+
+.clash-card__level--seong{
+  color: #f1560e;
+}
+
+.clash-card__unit-name{
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.clash-card__unit-description{
+  padding: 15px;
+  margin-bottom: 10px;
+
+}
+
+.clash-card__unit-stats--carlos{
+  background-color:#70300c ;
+}
+
+.clash-card__unit-stats--carlos .one-third{
+  border-right: 1px solid #221006;
+
+}
+
+.clash-card__unit-stats--kusunoki{
+  background-color:#555353;
+}
+
+.clash-card__unit-stats--kusunoki .one-third{
+  border-right: 1px solid #252424;
+
+}
+
+.clash-card__unit-stats--richard{
+  background-color:#500e34;
+}
+
+.clash-card__unit-stats--richard .one-third{
+  border-right: 1px solid #1f0614;
+
+}
+
+.clash-card__unit-stats--joana{
+  background-color:#2883a0;
+}
+
+.clash-card__unit-stats--joana .one-third{
+  border-right: 1px solid #094558;
+
+}
+
+.clash-card__unit-stats--seong{
+  background-color:#f1560e;
+}
+
+.clash-card__unit-stats--seong .one-third{
+  border-right: 1px solid #eea507;
+
+}
+
+.clash-card__unit-stats{
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+
+}
+
+.clash-card__unit-stats .one-third{
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+
+}
+
+.clash-card__unit-stats sup{
+  position: absolute;
+  bottom: 4px;
+  font-size: 45%;
+  margin-left: 2px;
+}
+
+.clash-card__unit-stats .stat{
+  position: center;
+  font-size: 13px;
+  margin-bottom: 10px;
+  
+
+}
+
+.clash-card__unit-stats .stat-value{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.clash-card__unit-stats .no-border{
+  border-right: none;
+}
+
+.clearfix::after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+.left{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding-left: 520px;
+  color: rgb(206, 24, 115);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.right{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  right: 550px;
+  color: rgb(206, 24, 115);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
